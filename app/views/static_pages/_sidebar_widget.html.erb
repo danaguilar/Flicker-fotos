@@ -1,0 +1,9 @@
+<div class="flickr">
+  <ul>
+    <% @photos.each do |p| %>
+      <li>
+          <%= image_tag("http://farm#{p.farm}.staticflickr.com/#{p.server}/#{p.id}_#{p.secret}.jpg", :class => 'flickr_photo', :border => 0, :size => '75x75')%>
+      </li>
+    <% end %>
+  </ul>
+</div>

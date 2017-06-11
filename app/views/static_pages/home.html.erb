@@ -1,0 +1,6 @@
+<%= form_tag({controller: "static_pages", action: "home"}, method: :get) do %>
+  <%= label_tag :id, "Input Flickr ID" %> <br>
+  <%= text_field_tag :id %> <br>
+  <%= submit_tag "Get my photos!" %>
+  <%= render 'sidebar_widget' %>
+<% end %>
